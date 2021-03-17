@@ -6,38 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title></title>
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://kit.fontawesome.com/05a6b04c02.js" crossorigin="anonymous"></script>
   </head>
 <body>
 <header>
       <!-- nav  -->
-    <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
-      <div class="container-fluid navbar-nav m-0"> 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-              <div class="col">
-            <a class="navbar-brand justify-content-start" href="#">
-              <img src="./images/hamburger.svg" alt="" width="30" height="24">Benny's</a>
-            </div>
+      <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand justify-content-start" href="#">
+            <img src="./images/hamburger.svg" alt="" width="30" height="24">Benny's</a>
+          <button class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#navbarNav" 
+                  aria-controls="navbarNav" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" role="button">   
+              <i class="fas fa-bars" aria-hidden="true"  style="color:#7a44ff; font-size:28px;"></i>
+          </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">The idea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
-          <div class="col">
-            <button class="navbar-toggler" 
-                    type="button"
-                    data-toggle="collapse" 
-                    data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive"  
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-            <a class="nav-link active" aria-current="page" href="#">The Idea</a>
-            <a class="nav-link active" href="#">News</a>
-            <a class="nav-link active" href="#">Contact</a>
-          </div>
-         </div> 
         </div>
-       </div>    
-      </div>
-    </nav>
+      </nav>
 </header>
 
 
@@ -184,8 +187,8 @@
     <option value="5">5</option>
   </select>
   <div class="form-floating">
-    <label for="floatingTextarea2">Additional notes</label>
-    <textarea class="form-c <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">ntrol" id="floatingTextarea2" style="height: 100px"></textarea>
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2"></label>
   </div>
 
 </form>

@@ -17,11 +17,21 @@ $heading-font: 'Love Ya Like A Sister', cursive;
 
 
 body {
-  width: 100vw;  
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    width: 100vw;  
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    button {
+        color: #7a44ff;
+        }
+    button:focus {
+        outline: #7a44ff;
+        border-color: #7a44ff;
+    }
 }
 
 
