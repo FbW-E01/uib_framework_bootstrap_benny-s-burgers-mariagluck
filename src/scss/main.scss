@@ -1,2 +1,111 @@
+$theme-colors: (
+    primary: #7a44ff,
+    dark: #000000
+    );  
+
+$border-radius: 0;     
+
+$h1-font-size: 5rem;
+$h2-font-size: 4rem;
+$h3-font-size: 3rem;
+
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+$heading-font: 'Love Ya Like A Sister', cursive;
+
+
+body {
+  width: 100vw;  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.hero-image {
+    width:100%;
+    height:400px;
+    background: url(../images/lidye-1Shk_PkNkNw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+ 
+    h1 {
+    font-family: $heading-font;
+    color: white;
+    margin-top: 10%;
+    margin-left: 10%;
+    }
+
+    h5 {
+    color: white;
+    margin-left: 10%;
+    }  
+}
+
+.idea {
+    h2 {
+    font-family: $heading-font;
+    text-align: center;
+    margin: 3% auto;
+    }
+    
+    img {
+    display: block;
+    width: 60px;
+    margin: auto;
+    }
+
+    h3 {
+    font-family: $heading-font;
+    text-align: center;
+    margin-top: 5%;
+    }
+
+    p {
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+.cards_section {
+   
+    h2 {
+        font-family: $heading-font;
+        color: white;
+        text-align: center;
+        }
+
+    h4 {
+        font-family: $heading-font; 
+    }
+    
+}
+
+form {
+    width: 260px;
+    margin: auto;
+    h2 {
+        font-family: $heading-font;
+        text-align: center;
+        margin: 5% 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cards_section {
+        height: 800px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }    
+}
+@include media-breakpoint-down(xs) {
+    
+    .card {
+        display: block;
+        margin: auto;
+    }   
+}
